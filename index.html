@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Read Text Aloud — Privacy Policy</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2040%2040%22%20fill=%22none%22%3E%3Ccircle%20cx=%2220%22%20cy=%2220%22%20r=%2220%22%20fill=%22%232363d0%22/%3E%3Cpath%20d=%22M10.8%2016.4H14.4L20%2011.2V28.8L14.4%2023.6H10.8Z%22%20fill=%22%23fff%22/%3E%3Cpath%20d=%22M24.81%2015.19A6.8%206.8%200%200%201%2024.81%2024.81M27.64%2012.36A10.8%2010.8%200%200%201%2027.64%2027.64%22%20stroke=%22%23fff%22%20stroke-width=%221.8%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&display=swap">
+<style>
+body { margin: 0; }
+/* Page palette: the dark block of design/tokens.css as hex — same as the welcome page. */
+.pg * { box-sizing: border-box; margin: 0; }
+.pg { --bg: #101419; --border: #373e47; --text: #e4e8ed; --body: #c3cad2; --faint: #7e8792; --accent: #4baeed;
+  min-height: 100vh; background: var(--bg); color: var(--text); font: 17px/1.6 "Instrument Sans", ui-sans-serif, system-ui, sans-serif; font-synthesis: none; }
+.pg .shell { max-width: 680px; margin: 0 auto; padding: 56px 24px 96px; }
+.pg .brand { display: flex; align-items: center; gap: 13px; margin-bottom: 40px; }
+.pg .mark { display: flex; flex: 0 0 auto; }
+.pg .brand b { font-size: 15px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.pg h1 { font-size: 32px; letter-spacing: -0.02em; line-height: 1.15; }
+.pg .updated { margin-top: 8px; font-size: 14px; color: var(--faint); }
+.pg h2 { margin-top: 36px; font-size: 20px; letter-spacing: -0.01em; }
+.pg p, .pg li { margin-top: 10px; color: var(--body); }
+.pg ul { margin-top: 10px; padding-left: 22px; }
+.pg strong { color: var(--text); font-weight: 600; }
+.pg code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .9em; overflow-wrap: anywhere; }
+.pg a { color: var(--accent); }
+.pg footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 14px; color: var(--faint); }
+</style>
+</head>
+<body>
+<div class="pg">
+  <div class="shell">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#2363d0"></circle><path d="M10.8 16.4H14.4L20 11.2V28.8L14.4 23.6H10.8Z" fill="#fff"></path><path d="M24.81 15.19A6.8 6.8 0 0 1 24.81 24.81M27.64 12.36A10.8 10.8 0 0 1 27.64 27.64" stroke="#fff" stroke-width="1.8"></path></svg></span>
+      <b>Read Text Aloud</b>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: October 14, 2026</p>
+
+    <p>Read Text Aloud is a Chrome extension that reads web pages, selected text or text you paste
+       aloud with the voices built into Chrome, and highlights the sentence being read. This policy
+       describes exactly what it does with your data.</p>
+
+    <h2>The short version</h2>
+    <ul>
+      <li>The extension collects nothing. There is no account, and there are no analytics or trackers.</li>
+      <li>The extension makes no network requests of its own.</li>
+      <li>By default, a voice on your computer reads, and your text stays on this computer.</li>
+      <li>If you choose one of Google’s online voices, Chrome sends the text being read to Google to
+          make the sound.</li>
+    </ul>
+
+    <h2>How it works</h2>
+    <p>The extension works only on the tab where you click its icon, press its keyboard shortcut or
+       choose one of its items in the right-click menu. On that tab it finds the main text of the page,
+       or takes the text you selected, splits it into sentences and passes them one at a time to the
+       speech engine built into Chrome. The highlight and the small player are shown on top of the page
+       and do not change the website itself.</p>
+    <p>The <strong>Paste text</strong> page is part of the extension: text you paste there is read the
+       same way.</p>
+
+    <h2>Voices</h2>
+    <ul>
+      <li><strong>Voices marked On device</strong> come with your operating system. They work offline,
+          and the text stays on this computer. One of them is used by default.</li>
+      <li><strong>Voices marked Online</strong> are Google’s voices built into Chrome. They need the
+          internet: to speak with them, Chrome itself — not the extension’s code — sends the text being
+          read to Google. They are used only if you choose one yourself. Google handles this text under
+          the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>What stays in your browser</h2>
+    <ul>
+      <li>In the extension’s storage on this computer (<code>chrome.storage.local</code>): your reading
+          speed, the voice you chose for each language, whether highlighting is on, whether you have
+          seen the first-run tip, and the last text you pasted on the Paste text page — until you click
+          <strong>Clear</strong>.</li>
+      <li>In session memory (<code>chrome.storage.session</code>), cleared when you close Chrome: the
+          text you are listening to and your place in it; for up to 10 tabs where you stopped reading,
+          the page address, its text and the place you stopped; and technical details of the last
+          failed start, if there was one.</li>
+    </ul>
+    <p>None of this is synced to your other devices or sent to the developer, and all of it is deleted
+       when you remove the extension.</p>
+
+    <h2>Permissions, explained</h2>
+    <ul>
+      <li><strong>activeTab</strong> — to read the text of the tab where you clicked the icon, pressed
+          the shortcut or chose a menu item. It gives no access to your other tabs.</li>
+      <li><strong>scripting</strong> — to add to that tab the script that finds the text, highlights the
+          sentence being read and shows the player.</li>
+      <li><strong>contextMenus</strong> — to add <strong>Read selection aloud</strong> and
+          <strong>Read from here</strong> to the right-click menu.</li>
+      <li><strong>tts</strong> — to speak the text with the voices built into Chrome.</li>
+      <li><strong>storage</strong> — to keep the settings and the pasted text listed above on this
+          computer.</li>
+    </ul>
+    <p>The extension does not ask for access to all websites: it can read a tab only after you use it
+       there.</p>
+
+    <h2>Pages the extension opens</h2>
+    <ul>
+      <li>After installation it opens a one-time <strong>welcome page</strong>, and after removal your
+          browser opens a <strong>feedback page</strong>. Both are ordinary web pages hosted on GitHub
+          Pages. They may use standard, anonymous web analytics.</li>
+      <li>Like other websites, these pages and this policy are served by third parties: GitHub Pages
+          hosts them and Google Fonts provides the typeface. Both receive your IP address and basic
+          browser details when a page loads.</li>
+      <li>Feedback you choose to send on the removal page (a reason and an optional comment) goes to the
+          developer through Google Forms, and only when you press <strong>Send feedback</strong>. It
+          contains only what you pick and type; the page adds no identifiers.</li>
+      <li>The <strong>Change</strong> link in the extension’s settings opens Chrome’s own keyboard
+          shortcuts page.</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be published at this address with a new date
+       above.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? <a href="https://github.com/anastasialekasova-hub/read-text-aloud-privacy/issues">Open an issue on GitHub</a>.</p>
+
+    <footer>Google and Chrome are trademarks of Google LLC. Read Text Aloud is an independent project and is not affiliated with, endorsed by or sponsored by Google LLC.</footer>
+  </div>
+</div>
+
+</body>
+</html>
