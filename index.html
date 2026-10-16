@@ -23,7 +23,7 @@ body { margin: 0; }
 .pg ul { margin-top: 10px; padding-left: 22px; }
 .pg strong { color: var(--text); font-weight: 600; }
 .pg code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .9em; overflow-wrap: anywhere; }
-.pg a { color: var(--accent); }
+.pg a { color: var(--accent); overflow-wrap: anywhere; }
 .pg footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 14px; color: var(--faint); }
 </style>
 </head>
@@ -36,7 +36,7 @@ body { margin: 0; }
     </div>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 14, 2026</p>
+    <p class="updated">Last updated: October 16, 2026</p>
 
     <p>Read Text Aloud is a Chrome extension that reads web pages, selected text or text you paste
        aloud with the voices built into Chrome, and highlights the sentence being read. This policy
@@ -76,6 +76,10 @@ body { margin: 0; }
           speed, the voice you chose for each language, whether highlighting is on, whether you have
           seen the first-run tip, and the last text you pasted on the Paste text page — until you click
           <strong>Clear</strong>.</li>
+      <li>Also in <code>chrome.storage.local</code>, for the rating request: the dates of up to five days
+          on which you used the extension, how many times you clicked <strong>Not now</strong>, the date
+          until which the request stays hidden, and whether you have clicked a star. Which star you
+          clicked is not stored.</li>
       <li>In session memory (<code>chrome.storage.session</code>), cleared when you close Chrome: the
           text you are listening to and your place in it; for up to 10 tabs where you stopped reading,
           the page address, its text and the place you stopped; and technical details of the last
@@ -93,8 +97,8 @@ body { margin: 0; }
       <li><strong>contextMenus</strong> — to add <strong>Read selection aloud</strong> and
           <strong>Read from here</strong> to the right-click menu.</li>
       <li><strong>tts</strong> — to speak the text with the voices built into Chrome.</li>
-      <li><strong>storage</strong> — to keep the settings and the pasted text listed above on this
-          computer.</li>
+      <li><strong>storage</strong> — to keep the settings, the pasted text and the rating-request record
+          listed above on this computer.</li>
     </ul>
     <p>The extension does not ask for access to all websites: it can read a tab only after you use it
        there.</p>
@@ -102,14 +106,20 @@ body { margin: 0; }
     <h2>Pages the extension opens</h2>
     <ul>
       <li>After installation it opens a one-time <strong>welcome page</strong>, and after removal your
-          browser opens a <strong>feedback page</strong>. Both are ordinary web pages hosted on GitHub
-          Pages. They may use standard, anonymous web analytics.</li>
-      <li>Like other websites, these pages and this policy are served by third parties: GitHub Pages
-          hosts them and Google Fonts provides the typeface. Both receive your IP address and basic
-          browser details when a page loads.</li>
-      <li>Feedback you choose to send on the removal page (a reason and an optional comment) goes to the
-          developer through Google Forms, and only when you press <strong>Send feedback</strong>. It
-          contains only what you pick and type; the page adds no identifiers.</li>
+          browser opens a page that asks why you removed it.</li>
+      <li>After you have used the extension on five different days, its popup asks <strong>Is Read Text
+          Aloud useful?</strong> and shows five stars. Clicking 4 or 5 stars opens the extension’s reviews
+          page in the Chrome Web Store; clicking 1 to 3 stars opens a short <strong>feedback page</strong>.
+          <strong>Not now</strong> hides the question for 30 days, and a second click hides it for good.
+          The extension itself sends nothing when you click a star, and the address it opens contains no
+          information about you.</li>
+      <li>The welcome, removal and feedback pages are ordinary web pages hosted on GitHub Pages. They may
+          use standard, anonymous web analytics. Like other websites, these pages and this policy are
+          served by third parties: GitHub Pages hosts them and Google Fonts provides the typeface. Both
+          receive your IP address and basic browser details when a page loads.</li>
+      <li>Feedback you choose to send on the removal page or the feedback page goes to the developer
+          through Google Forms, and only when you press <strong>Send feedback</strong>. It contains only
+          what you pick and type; the pages add no identifiers.</li>
       <li>The <strong>Change</strong> link in the extension’s settings opens Chrome’s own keyboard
           shortcuts page.</li>
     </ul>
@@ -119,7 +129,11 @@ body { margin: 0; }
        above.</p>
 
     <h2>Contact</h2>
-    <p>Questions? <a href="https://github.com/anastasialekasova-hub/read-text-aloud-privacy/issues">Open an issue on GitHub</a>.</p>
+    <p>The only way to contact the developer is GitHub Issues. To ask a question about this policy or
+       your data, open an issue here:
+       <a href="https://github.com/anastasialekasova-hub/read-text-aloud-privacy/issues">github.com/anastasialekasova-hub/read-text-aloud-privacy/issues</a>.
+       You need a free GitHub account to do this. Issues are public, so do not include anything you
+       want to keep private.</p>
 
     <footer>Google and Chrome are trademarks of Google LLC. Read Text Aloud is an independent project and is not affiliated with, endorsed by or sponsored by Google LLC.</footer>
   </div>
